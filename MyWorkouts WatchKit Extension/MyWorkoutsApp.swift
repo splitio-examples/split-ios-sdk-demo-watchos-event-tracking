@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct MyWorkoutsApp: App {
     @StateObject private var workoutManager = WorkoutManager()
+    @StateObject private var split = SplitWrapper.instance
 
     @SceneBuilder var body: some Scene {
         WindowGroup {
@@ -20,6 +21,7 @@ struct MyWorkoutsApp: App {
                 SummaryView()
             }
             .environmentObject(workoutManager)
+            .environmentObject(split)
         }
     }
 }

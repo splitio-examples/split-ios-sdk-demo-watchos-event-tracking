@@ -1,11 +1,11 @@
-# Build a workout app for Apple Watch
+# WatchOS example - Add event tracking to a workout app
 
-Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
+Add event tracking using the Split iOS SDK.
 
 ## Overview
 
 - Note: This sample code project is associated with WWDC21 session
-[10009: Build a workout app for Apple Watch](https://developer.apple.com/wwdc21/10009/).
+[10009: Build a workout app for Apple Watch](https://developer.apple.com/wwdc21/10009/). The code was enhanced by Split to demonstrate event tracking.
 
 ## Configure the sample code project
 
