@@ -1,11 +1,11 @@
-# WatchOS example - Add event tracking to a workout app
+# WatchOS example - Add event tracking with user consent to a workout app
 
-Add event tracking using the Split iOS SDK.
+Add event tracking using the Split iOS SDK with user consent.
 
 ## Overview
 
 - Note: This sample code project is associated with WWDC21 session
-[10009: Build a workout app for Apple Watch](https://developer.apple.com/wwdc21/10009/). The code was enhanced by Split to demonstrate event tracking.
+[10009: Build a workout app for Apple Watch](https://developer.apple.com/wwdc21/10009/). The code was enhanced by Split to demonstrate event tracking and user consent.
 
 ## Configure the sample code project
 

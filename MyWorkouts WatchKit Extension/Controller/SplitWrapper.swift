@@ -17,6 +17,8 @@ class SplitWrapper: ObservableObject {
     
     @Published var isReady: Bool = false
     @Published var isReadyTimedOut: Bool = false
+
+    @Published private var userConsentValue: Bool?
     
     private let apiKey = "[front-end (client-side) Split API Key goes here]"
 
@@ -26,6 +28,9 @@ class SplitWrapper: ObservableObject {
         let config = SplitClientConfig()
         config.logLevel = .verbose
         config.sdkReadyTimeOut = 1000  // Set the time limit (in milliseconds) for Split definitions to be downloaded and enable the .sdkReadyTimedOut event.
+        config.userConsent = UserConsent.unknown
+        
+        userConsentValue = nil
         
         factory = DefaultSplitFactoryBuilder()
             .setApiKey(apiKey)
@@ -60,6 +65,25 @@ class SplitWrapper: ObservableObject {
         // Tip: The following events can also be received:
         //    .sdkReadyFromCache - faster than .sdkReady
         //    .sdkUpdated        - when new split definitions are received
+    }
+    
+    public var isUserConsentUnknown: Bool {
+        get {
+            return UserConsent.unknown == factory.userConsent
+        }
+    }
+    
+    public var isUserConsentGranted: Bool {
+        get {
+            return UserConsent.granted == factory.userConsent
+        }
+        set {
+            factory.setUserConsent(enabled: newValue)
+            
+            DispatchQueue.main.async {
+                self.userConsentValue = newValue
+            }
+        }
     }
 
     // MARK: - Split SDK Function Wrappers

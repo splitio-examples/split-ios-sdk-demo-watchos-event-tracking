@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091FDBCB29B5532E00E7F089 /* SplitUserConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FDBCA29B5532E00E7F089 /* SplitUserConsentView.swift */; };
 		09227DA22995985D0029760F /* SplitWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09227DA12995985D0029760F /* SplitWrapper.swift */; };
 		0939A4772977435B001DD43D /* Split in Frameworks */ = {isa = PBXBuildFile; productRef = 0939A4762977435B001DD43D /* Split */; };
 		E0CF93A22661A76300F7CED2 /* MyWorkouts WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E0CF93A12661A76300F7CED2 /* MyWorkouts WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		091FDBCA29B5532E00E7F089 /* SplitUserConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitUserConsentView.swift; sourceTree = "<group>"; };
 		09227DA12995985D0029760F /* SplitWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitWrapper.swift; sourceTree = "<group>"; };
 		9CCDDFA02FD1E157086EAD25 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		B97863FA9DADB69A3D7E0241 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				E0DCA62A2661B3CD00496154 /* SessionPagingView.swift */,
 				E0DCA6282661B3CD00496154 /* StartView.swift */,
 				E0DCA6272661B3CD00496154 /* SummaryView.swift */,
+				091FDBCA29B5532E00E7F089 /* SplitUserConsentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				E0DCA6322661B3CD00496154 /* MetricsView.swift in Sources */,
 				E0DCA62E2661B3CD00496154 /* SummaryView.swift in Sources */,
 				E0DCA62F2661B3CD00496154 /* StartView.swift in Sources */,
+				091FDBCB29B5532E00E7F089 /* SplitUserConsentView.swift in Sources */,
 				09227DA22995985D0029760F /* SplitWrapper.swift in Sources */,
 				E0DCA6312661B3CD00496154 /* SessionPagingView.swift in Sources */,
 			);
